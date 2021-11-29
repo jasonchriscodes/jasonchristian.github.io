@@ -206,7 +206,7 @@ textarea {
       rgba(97, 97, 97, 0.8),
       rgba(97, 97, 97, 0.8)
     ),
-    url(/Jason/Portofolio/common-bg.svg);
+    url(/Jason/Portofolio/common-bg.png);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -599,7 +599,7 @@ textarea {
       rgba(97, 97, 97, 0.8),
       rgba(97, 97, 97, 0.8)
     ),
-    url(/Jason/Portofolio/common-bg.svg);
+    url(/Jason/Portofolio/common-bg.png);
   background-size: cover;
   background-position: center;
   position: relative;
