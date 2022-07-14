@@ -353,6 +353,19 @@ textarea {
   position: relative;
   cursor: pointer;
 }
+
+@media (max-width: 37.5em) {
+  .accordion-item-header {
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .accordion-item-header {
+    line-height: 3rem;
+  }
+}
+
 .accordion-item-header::after {
   content: "\002B";
   font-size: 2rem;
