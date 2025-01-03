@@ -329,6 +329,133 @@ textarea {
   color: #616161;
   margin: 0 3px;
 }
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+.experience__item {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.experience__role {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.experience__company {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #616161;
+  margin-bottom: 1rem;
+}
+
+.experience__duration-location {
+  font-size: 1.8rem;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.experience__details {
+  font-size: 1.8rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.experience__responsibilities {
+  font-size: 1.8rem;
+  color: #666;
+  line-height: 1.6;
+  list-style: disc;
+  padding-left: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.experience__skills {
+  font-size: 1.8rem;
+  color: #616161;
+  font-weight: 600;
+}
+
+/* Project Images Gallery */
+.experience__projects {
+  margin-top: 3rem;
+}
+
+.experience__projects-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.experience__projects-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.experience__projects-item {
+  text-align: center;
+}
+
+.experience__projects-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience__projects-item img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.experience__projects-item p {
+  font-size: 1.6rem;
+  color: #555;
+  margin-top: 0.8rem;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 56.25em) {
+  .experience__item {
+    padding: 2.5rem;
+  }
+
+  .experience__role {
+    font-size: 2.4rem;
+  }
+
+  .experience__company,
+  .experience__duration-location,
+  .experience__details,
+  .experience__responsibilities,
+  .experience__skills {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .experience__projects-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 .accordion {
   background-color: #fafafa;
   width: 90%;
@@ -985,3 +1112,4 @@ textarea {
     top: 27px;
   }
 }
+
