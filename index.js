@@ -106,3 +106,82 @@ function ajax(method, url, data, success, error) {
   xhr.send(data);
 }
 
+// const slides = document.querySelectorAll('.slider__image');
+// let currentIndex = 0;
+
+// function updateSlides() {
+//   slides.forEach((slide, index) => {
+//     slide.classList.remove('slider__image--active');
+//     slide.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
+//   });
+//   slides[currentIndex].classList.add('slider__image--active');
+// }
+
+// function prevSlide() {
+//   currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+//   updateSlides();
+// }
+
+// function nextSlide() {
+//   currentIndex = (currentIndex + 1) % slides.length;
+//   updateSlides();
+// }
+
+// // Initialize the slider
+// updateSlides();
+
+// const swiper = new Swiper('.experience-slider', {
+//   loop: true,
+//   grabCursor: true,
+//   spaceBetween: 20,
+//   slidesPerView: 1,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 2,
+//     },
+//     1024: {
+//       slidesPerView: 3,
+//     },
+//   },
+// });
+
+new Swiper('.card-wrapper', {
+  loop: true,
+  spaceBetween: 30,
+
+  // Pagination bullets
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true
+  },
+
+  // Navigation arrows
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+      0: {
+          slidesPerView: 1
+      },
+      768: {
+          slidesPerView: 2
+      },
+      1024: {
+          slidesPerView: 3
+      }
+  }
+});
+
+

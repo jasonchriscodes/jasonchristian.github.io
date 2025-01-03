@@ -377,83 +377,61 @@ textarea {
   margin-bottom: 2rem;
 }
 
+.experience__responsibilities-title {
+  font-size: 2.4rem; /* Increase font size */
+  font-weight: 700; /* Make the text bold */
+  color: #333; /* Darker color for emphasis */
+  margin-bottom: 1.5rem; /* Add spacing below */
+  text-transform: uppercase; /* Optional: Capitalize the text */
+  letter-spacing: 1px; /* Optional: Add slight letter spacing */
+}
+
 .experience__responsibilities {
-  font-size: 1.8rem;
-  color: #666;
-  line-height: 1.6;
-  list-style: disc;
-  padding-left: 2.5rem;
-  margin-bottom: 2rem;
+  list-style: none; /* Remove default bullets */
+  padding-left: 0; /* Align with custom bullets */
+}
+
+.experience__responsibilities li {
+  position: relative;
+  padding-left: 2.5rem; /* Space for the custom bullet */
+  margin-bottom: 1.5rem; /* Add spacing between items */
+  font-size: 2rem; /* Increase font size */
+  line-height: 1.8; /* Improve readability with line spacing */
+  color: #333; /* Use a darker color for better readability */
+}
+
+.experience__responsibilities li::before {
+  content: "•"; /* Add the custom bullet symbol */
+  color: #616161; /* Customize bullet color */
+  font-size: 2.5rem; /* Larger bullet size */
+  position: absolute;
+  left: 0; /* Position the bullet */
+  top: 50%; /* Align with the middle of the text */
+  transform: translateY(-50%); /* Center vertically */
 }
 
 .experience__skills {
-  font-size: 1.8rem;
-  color: #616161;
-  font-weight: 600;
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap; /* Align items in rows */
+  gap: 1rem; /* Space between skills */
 }
 
-/* Project Images Gallery */
-.experience__projects {
-  margin-top: 3rem;
-}
-
-.experience__projects-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-.experience__projects-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.experience__projects-item {
-  text-align: center;
-}
-
-.experience__projects-item img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.experience__projects-item img:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-}
-
-.experience__projects-item p {
+.experience__skills li {
+  background: rgba(153, 153, 153, 0.2); /* Light grey background */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   font-size: 1.6rem;
-  color: #555;
-  margin-top: 0.8rem;
+  color: #333; /* Dark text */
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-/* Responsive Adjustments */
-@media only screen and (max-width: 56.25em) {
-  .experience__item {
-    padding: 2.5rem;
-  }
-
-  .experience__role {
-    font-size: 2.4rem;
-  }
-
-  .experience__company,
-  .experience__duration-location,
-  .experience__details,
-  .experience__responsibilities,
-  .experience__skills {
-    font-size: 1.6rem;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .experience__projects-gallery {
-    grid-template-columns: 1fr;
-  }
+.experience__skills li:hover {
+  background: #616161; /* Darker background on hover */
+  color: #fff; /* White text on hover */
 }
 
 .accordion {
@@ -494,7 +472,7 @@ textarea {
 }
 
 .accordion-item-header::after {
-  content: "\002B";
+  1ent: "\002B";
   font-size: 2rem;
   position: absolute;
   right: 1rem;
