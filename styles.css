@@ -524,7 +524,7 @@ textarea {
 }
 
 .accordion-item-header::after {
-  1ent: "\002B";
+  content: "\002B"; /* Corrected from '1ent' to 'content' */
   font-size: 2rem;
   position: absolute;
   right: 1rem;
