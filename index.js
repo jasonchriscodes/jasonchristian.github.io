@@ -106,4 +106,34 @@ function ajax(method, url, data, success, error) {
   xhr.send(data);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper('.card-slider', {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
+  });
+
+  // Debug: Check button bindings
+  console.log(swiper.navigation.nextEl); // Should log the next button element
+  console.log(swiper.navigation.prevEl); // Should log the previous button element
+});
+
 

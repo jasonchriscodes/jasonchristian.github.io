@@ -434,6 +434,58 @@ textarea {
   color: #fff; /* White text on hover */
 }
 
+.card-slider {
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  font-size: 1.6rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  display: block !important; /* Ensure visibility */
+}
+
+.swiper-pagination-bullet {
+  background: #616161;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #616161;
+}
+
 .accordion {
   background-color: #fafafa;
   width: 90%;
